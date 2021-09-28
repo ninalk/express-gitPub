@@ -1,0 +1,9 @@
+<%- include('./partials/header') %>
+
+    <h1>At foo bar</h1>
+    <h2><%= drink.name %></h2>
+    <img src="<%= drink.image.replace('.jpg', '.png') %>" alt="">
+    <h3>Price: <%= drink.price %></h3>
+    <a href="/">Return to Menu</a>
+
+<%- include('./partials/footer') %>

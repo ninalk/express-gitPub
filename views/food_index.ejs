@@ -1,0 +1,15 @@
+<%- include('./partials/header') %>
+
+    <h1>Aloooohhaaa, Welcome to gitPub!!</h1>
+    <h3>Food Menu</h3>
+    <ul>
+        <% allFood.forEach(function(food, index) { %>
+            <li>
+                <a href="/food/<%= index %>">
+                    <%= food.name %>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+
+<%- include('./partials/footer') %>
